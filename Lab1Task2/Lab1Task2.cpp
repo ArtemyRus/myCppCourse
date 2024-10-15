@@ -1,9 +1,12 @@
-﻿#define PR(x) printf("x = %u, *x = %d, &x = %u\n", x, *x, &x)
+﻿//Выполнить программу, иллюстрирующую разные операции с 
+//указателями. Повторить эксперимент для разных типов данных.
+
+#define PR(x) printf("x = %u, *x = %d, &x = %u\n", x, *x, &x)
 #include <stdio.h>
 
 void main(void) {
-	int mas[] = { 100, 200, 300 };
-	int* ptr1, * ptr2;
+	char mas[] = { 'a', 'b', 'c'};
+	char* ptr1, * ptr2;
 	ptr1 = mas;
 	ptr2 = &mas[2];
 	PR(ptr1);
