@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0a194634-e5e4-49e6-9291-de459833a68e}</ProjectGuid>
-    <RootNamespace>Lab4Task2</RootNamespace>
+    <ProjectGuid>{80ae3890-3551-4593-bd1a-80c0839d5701}</ProjectGuid>
+    <RootNamespace>Lab6</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -70,10 +70,6 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <AllProjectBMIsArePublic>true</AllProjectBMIsArePublic>
-    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
-  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -131,11 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Lab4Task2.cpp" />
-    <ClCompile Include="strFoo.cpp" />
+    <ClCompile Include="Lab6.cpp" />
+    <ClCompile Include="MyString.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="strFoo.h" />
+    <ClInclude Include="MyString.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lab4Task2\Lab4Task2.vcxproj">
+      <Project>{0a194634-e5e4-49e6-9291-de459833a68e}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
